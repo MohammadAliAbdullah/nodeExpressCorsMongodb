@@ -30,3 +30,14 @@ Is this ok? (yes) yes
 
 Now let’s run the app with command: node server.js.
 ```
+
+### Configure MongoDB database & Mongoose
+
+```
+In the app folder, we create a separate config folder for configuration with db.config.js file like this:
+```
+> module.exports = {
+>   url: "mongodb://localhost:27017/nodeExpressCorsMongodb"
+> };
+
+### Define Mongoose
