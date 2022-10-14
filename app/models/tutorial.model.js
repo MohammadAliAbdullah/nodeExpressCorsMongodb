@@ -16,4 +16,17 @@ module.exports = mongoose => {
 
     const Tutorial = mongoose.model("tutorial", schema);
     return Tutorial;
+
+    /*
+    >> `UserModel` is a "Model", a subclass of `mongoose.Model`.
+    const UserModel = mongoose.model('User', new Schema({ name: String }));
+
+    >> You can use a Model to create new documents using `new`:
+    const userDoc = new UserModel({ name: 'Foo' });
+    await userDoc.save();
+
+    >> You also use a model to create queries:
+    const userFromDb = await UserModel.findOne({ name: 'Foo' });
+    */
+
 };

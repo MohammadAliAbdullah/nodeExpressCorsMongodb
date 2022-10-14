@@ -23,8 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 //     res.json({ message: "Welcome to node, express application." });
 // });
 const db = require("./app/models");
-db.mongoose
-  .connect(db.url, {
+db.mongoose.connect(db.url, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
@@ -36,6 +35,7 @@ db.mongoose
     process.exit();
   });
 
+require("./app/routes/tutorial.routes")(app);
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
