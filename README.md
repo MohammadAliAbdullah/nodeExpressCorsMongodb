@@ -2,6 +2,7 @@
 Node.js, Express &amp; MongoDb: Build a CRUD Rest Api
 
 # npm init
+```
 name: (nodeExpressCorsMongodb) 
 version: (1.0.0) 
 description: Node.js Restful CRUD API with Node.js, Express and MongoDB
@@ -16,4 +17,5 @@ Is this ok? (yes) yes
 
 install necessary modules: express, mongoose and cors.
 Run the command:
+```
 # npm install express mongoose cors --save
