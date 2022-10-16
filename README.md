@@ -76,7 +76,9 @@ db.mongoose
     console.log("Cannot connect to the database!", err);
     process.exit();
   });
-Define the Mongoose Model
+  ```
+###  Define the Mongoose Model
+```
 In models folder, create tutorial.model.js file like this:
 
 module.exports = mongoose => {
