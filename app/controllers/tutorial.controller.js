@@ -1,8 +1,5 @@
 const db = require("../models");
-// console.log(db);
-const Post = db.tutorials.Post;
-// console.log(Tutorial);
-
+const Tutorial = db.collections.Tutorial;
 // Create and Save a new Tutorial
 exports.create = (req, res) => {
     // Validate request
@@ -12,7 +9,7 @@ exports.create = (req, res) => {
     }
 
     // Create a Tutorial
-    const tutorial = new Post({
+    const tutorial = new Tutorial({
         title: req.body.title,
         description: req.body.description,
         published: req.body.published ? req.body.published : false

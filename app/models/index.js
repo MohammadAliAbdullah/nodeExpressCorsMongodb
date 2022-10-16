@@ -6,6 +6,6 @@ const db = {};
 db.mongoose = mongoose;
 db.url = dbConfig.url;
 // create schema and collection for project.
-db.tutorials = require("./tutorial.model.js")(mongoose);
+db.collections = require("./tutorial.model.js")(mongoose);
 // console.log(db.tutorials);
 module.exports = db;
