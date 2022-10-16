@@ -1,3 +1,4 @@
+require('dotenv').config()
 // Express is for building the Rest apis
 const express = require("express");
 // cors provides Express middleware to enable CORS with various options.
