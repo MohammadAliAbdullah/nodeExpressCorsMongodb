@@ -5,10 +5,10 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-
+const PORT = process.env.PORT || 8080;
 // origin 
 var corsOptions = {
-    origin: "http://localhost:8080"
+    origin: "http://localhost:"+ PORT
 };
 
 app.use(cors(corsOptions));
@@ -39,7 +39,6 @@ db.mongoose.connect(db.url, {
 console.log(process.env.PORT);
 require("./app/routes/tutorial.routes")(app);
 // set port, listen for requests
-const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}.`);
 });

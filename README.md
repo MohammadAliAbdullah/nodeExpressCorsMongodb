@@ -106,3 +106,14 @@ add require('dotenv').config() in the server.js
 
 process.env.PORT
 ```
+
+### Install nodemon
+> npm install nodemon --save
+> npm install -g nodemon
+
+```
+nodemon is a tool that helps develop Node.js based 
+applications by automatically restarting the node application 
+when file changes in the directory are detected.
+https://www.npmjs.com/package/nodemon/v/2.0.20
+```
